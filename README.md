@@ -21,4 +21,4 @@ Specifies the cloud provider settings, such as AWS region, credentials, and prov
 Defines output values like VPC ID, Subnet ID, or EC2 instance IPs. These outputs are useful for logging, debugging, or integration with other Terraform stacks.
 
 # g. local.tf
-Contains locally scoped values such as environment name, project name, or tags. This helps reduce repetition and enables the construction of dynamic resource names and labels.
+Contains locally scoped values such as environment name, project name. This helps reduce repetition and enables the construction of dynamic resource names and labels.
