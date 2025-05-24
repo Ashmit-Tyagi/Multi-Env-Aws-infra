@@ -56,4 +56,4 @@ This folder contains reusable Terraform modules, each housed in its own subfolde
 ### 7. subnet/: Creates subnets within a VPC, which can be public or private, defined by CIDR blocks and availability zones. ###
 
 
-# 8. vpc/: Creates the Virtual Private Cloud (VPC), which forms the foundation of the AWS network setup. Other resources like subnets, EC2 instances, and gateways are deployed within the VPC. ###
+### 8. vpc/: Creates the Virtual Private Cloud (VPC), which forms the foundation of the AWS network setup. Other resources like subnets, EC2 instances, and gateways are deployed within the VPC. ###
