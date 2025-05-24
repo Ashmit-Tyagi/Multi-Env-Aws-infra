@@ -14,11 +14,8 @@ Provides specific values for the variables declared in variables.tf. Each enviro
 # d. backend.tf
 Configures the remote backend (commonly S3) used for storing the Terraform state. This setup supports centralized, secure, and consistent state management across teams and environments.
 
-# e. provider.tf
-Specifies the cloud provider settings, such as AWS region, credentials, and provider version. This ensures consistent deployments across all environments.
-
-# f. output.tf
+# e. output.tf
 Defines output values like VPC ID, Subnet ID, or EC2 instance IPs. These outputs are useful for logging, debugging, or integration with other Terraform stacks.
 
-# g. local.tf
+# f. local.tf
 Contains locally scoped values such as environment name, project name. This helps reduce repetition and enables the construction of dynamic resource names and labels.
