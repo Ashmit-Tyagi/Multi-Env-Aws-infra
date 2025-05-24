@@ -27,3 +27,26 @@ Defines output values like VPC ID, Subnet ID, or EC2 instance IPs. These outputs
 
 # f. local.tf
 Contains locally scoped values such as environment name, project name. This helps reduce repetition and enables the construction of dynamic resource names and labels.
+
+
+### Modules Folder: modules ###
+
+This folder contains reusable Terraform modules, each housed in its own subfolder. Every module is responsible for managing a specific AWS resource or component. These modules can be invoked from any environment folder (such as dev, test, or prod), which helps eliminate code duplication and promotes consistency.
+
+Subfolders inside modules/:
+
+1. ec2/: Manages the creation of EC2 instances. It accepts parameters like AMI ID, instance type, key pair name, subnet ID, and instance tags.
+
+2. eip/: Handles Elastic IP addresses, which are static public IPs that can be associated with EC2 instances.
+
+3. igw/: Creates an Internet Gateway, enabling public subnets to have internet access.
+
+4. nat/: Creates a NAT Gateway, allowing instances in private subnets to access the internet (for tasks like package installation) without exposing them publicly.
+
+5. s3/: Sets up S3 buckets for purposes such as storing logs, Terraform state files, or application data.
+
+6. sg/: Manages security groups and their rules, controlling inbound and outbound traffic for EC2 instances and other AWS resources.
+
+7. subnet/: Creates subnets within a VPC, which can be public or private, defined by CIDR blocks and availability zones.
+
+8. vpc/: Creates the Virtual Private Cloud (VPC), which forms the foundation of the AWS network setup. Other resources like subnets, EC2 instances, and gateways are deployed within the VPC.
