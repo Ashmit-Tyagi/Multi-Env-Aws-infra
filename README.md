@@ -4,6 +4,12 @@
 
 ### Each environment (dev, test, prod) is structured with the following essential Terraform configuration files, ensuring consistency, reusability, and clarity across deployments: ###
 
+
+### Environment Folder: dev ###
+
+The dev folder contains the Terraform configuration tailored for the development environment. It specifies how various modules (such as VPC, EC2, etc.) are implemented and configured using values unique to the development setup.
+
+
 # a. main.tf
 Defines the core infrastructure by referencing reusable modules (e.g., VPC, Subnet, EC2). It serves as the main blueprint outlining the resources and their interdependencies.
 
