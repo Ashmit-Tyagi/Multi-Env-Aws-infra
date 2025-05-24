@@ -1,6 +1,6 @@
 # Multi-Env-Aws-infra
 
-# In this project, Terraform is used to provision and manage infrastructure across multiple environments — development (dev), testing (test), and production (prod). The setup follows a modular architecture, where each component of the infrastructure (such as EC2, VPC, Subnets, etc.) is defined in separate, reusable modules. This modular structure improves code organization, simplifies maintenance, and makes it easier to scale the infrastructure as new resources or environments are introduced.
+### In this project, Terraform is used to provision and manage infrastructure across multiple environments — development (dev), testing (test), and production (prod). The setup follows a modular architecture, where each component of the infrastructure (such as EC2, VPC, Subnets, etc.) is defined in separate, reusable modules. This modular structure improves code organization, simplifies maintenance, and makes it easier to scale the infrastructure as new resources or environments are introduced. ###
 
 ### Each environment (dev, test, prod) is structured with the following essential Terraform configuration files, ensuring consistency, reusability, and clarity across deployments: ###
 
