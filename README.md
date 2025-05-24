@@ -35,18 +35,18 @@ This folder contains reusable Terraform modules, each housed in its own subfolde
 
 # Subfolders inside modules/:
 
-# 1. ec2/: Manages the creation of EC2 instances. It accepts parameters like AMI ID, instance type, key pair name, subnet ID, and instance tags.
+### 1. ec2/: Manages the creation of EC2 instances. It accepts parameters like AMI ID, instance type, key pair name, subnet ID, and instance tags.
 
-# 2. eip/: Handles Elastic IP addresses, which are static public IPs that can be associated with EC2 instances.
+### 2. eip/: Handles Elastic IP addresses, which are static public IPs that can be associated with EC2 instances.
 
-# 3. igw/: Creates an Internet Gateway, enabling public subnets to have internet access.
+### 3. igw/: Creates an Internet Gateway, enabling public subnets to have internet access.
 
-# 4. nat/: Creates a NAT Gateway, allowing instances in private subnets to access the internet (for tasks like package installation) without exposing them publicly.
+### 4. nat/: Creates a NAT Gateway, allowing instances in private subnets to access the internet (for tasks like package installation) without exposing them publicly.
 
-# 5. s3/: Sets up S3 buckets for purposes such as storing logs, Terraform state files, or application data.
+### 5. s3/: Sets up S3 buckets for purposes such as storing logs, Terraform state files, or application data.
 
-# 6. sg/: Manages security groups and their rules, controlling inbound and outbound traffic for EC2 instances and other AWS resources.
+### 6. sg/: Manages security groups and their rules, controlling inbound and outbound traffic for EC2 instances and other AWS resources.
 
-# 7. subnet/: Creates subnets within a VPC, which can be public or private, defined by CIDR blocks and availability zones.
+### 7. subnet/: Creates subnets within a VPC, which can be public or private, defined by CIDR blocks and availability zones.
 
 # 8. vpc/: Creates the Virtual Private Cloud (VPC), which forms the foundation of the AWS network setup. Other resources like subnets, EC2 instances, and gateways are deployed within the VPC.
