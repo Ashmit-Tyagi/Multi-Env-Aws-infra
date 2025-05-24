@@ -31,9 +31,11 @@ Contains locally scoped values such as environment name, project name. This help
 
 ### Modules Folder: modules ###
 
+
 This folder contains reusable Terraform modules, each housed in its own subfolder. Every module is responsible for managing a specific AWS resource or component. These modules can be invoked from any environment folder (such as dev, test, or prod), which helps eliminate code duplication and promotes consistency.
 
-# Subfolders inside modules/:
+# Subfolders inside modules/: #
+
 
 ### 1. ec2/: Manages the creation of EC2 instances. It accepts parameters like AMI ID, instance type, key pair name, subnet ID, and instance tags. ###
 
